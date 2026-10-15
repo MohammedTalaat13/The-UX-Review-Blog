@@ -1,0 +1,214 @@
+@media (max-width: 480px){
+    :root{
+        font-size: 12px;
+    }
+    
+}
+
+
+
+@media (min-width: 481px){
+    :root{
+        font-size: 14px;
+    }
+    
+    section,
+    footer {   
+        padding: 70px 0px ;
+        
+    }
+}
+
+@media (min-width: 640px){
+    .articles .article-card .card-meta > div{
+        width: 50%;
+    }
+    
+}
+
+
+
+@media (min-width: 768px){
+    .flex-box{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+    
+
+
+    :root {
+        font-size: 16px;
+    }
+
+    header{
+        padding: 16px;
+    }
+
+    header .container{
+        padding: 12px 24px;
+        
+    }
+
+    footer .footer-content > :nth-child(2){
+        width: calc( 25% - 1.5rem );
+    }
+
+    footer .footer-content > :last-child{
+        width: calc( 75% - 1.5rem );
+    }
+
+    section,
+    footer {   
+        padding: 80px 0px ;
+        
+    }
+}
+
+@media (min-width: 1024px){
+    .col4{  
+        width:  calc(50% - calc( 2rem / 2));
+    }
+
+    .col6{
+        width: calc(50% - 2rem);
+    }
+
+    .articles .container{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: flex-start;
+        
+    }
+
+    .articles .container .article-cards{
+        width: calc(66.6666% - 1rem);
+    }
+
+    .articles .container aside{
+        display: block;
+        width: calc(33.33333% - 1rem);
+    }
+
+    .articles .container aside{
+        position: sticky;
+        top: 90px;
+    }
+
+    .articles .article-cards .headline{
+        margin-bottom: calc(48px - 2rem);
+    }
+
+
+    .articles .article-cards .headline .badge{
+        display: block;
+    }
+
+    .articles .article-cards .article-card{
+        display: flex;
+        gap: 0.75rem;
+    }
+
+
+    .articles .article-cards .article-card .card-details{
+        width: calc(100% - 11.75rem);
+    }
+
+    footer .container .footer-content > :first-child{
+        width: calc(40% - 2rem);
+    }
+
+    footer .container .footer-content > :nth-child(2){
+        width: calc(20% - 2rem);
+    }
+
+    footer .container .footer-content > :last-child{
+        width: calc(40% - 2rem);
+    }
+    /* newsletter */
+}
+
+
+@media (min-width: 1280px){
+        .col4{
+            width:  calc( 33.33333% - calc(4rem / 3));
+        }
+
+        header .menuBox{
+            display: none;
+        }
+        
+        .layer-MobileMenu{
+            display: none;
+        }
+        
+        header nav{
+            display: flex;
+            gap: calc(.25rem * 4);
+        }
+
+        header nav .link a{
+            font-size: .875rem;
+            font-weight: 600;
+            color: #000;        
+             transition: all .2s cubic-bezier(.4, 0, .2, 1);
+        }
+
+        header nav .link a:hover{
+            color: #ff7a50;
+
+        }
+
+
+        header .container>.btn{
+            display: block;
+            background-color: #FFD15B;
+            padding: 8px 16px;
+            cursor: pointer;
+            border: #000 solid 1.6px;
+            border-radius: 3.40282e38px;
+            font-size: .875rem;
+            font-weight: 700;
+            color: #000;        
+            transition: all .2s cubic-bezier(.4, 0, .2, 1);
+            line-height: 1.42857;
+        }
+
+        header .container>.btn:hover{
+            transform: translate(3px , 3px);
+        }
+
+        .hero .container{
+            display: flex;
+            flex-direction: row;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content,
+        .hero-visual{
+            width: calc(50% - 2rem);
+        }
+
+        .hero-visual .image{
+            transform: rotate(2deg);
+        }
+
+        .hero-visual .image:hover{
+            transform: rotate(2deg) translate(-2px,-2px);
+        }
+
+        .hero-content .btns-area{
+            margin: 0px;
+        }
+        
+        footer .footer-bottom{
+            justify-content: space-between;
+        }
+
+        footer .footer-bottom > *{
+            width: fit-content;
+        }
+}
